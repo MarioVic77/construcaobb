@@ -1,12 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aluno Online</title>
-  </head>
-  <body>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aluno Online - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Estrutura principal -->
+  <div class="layout">
+
+    <!-- Menu lateral -->
+    <aside class="sidebar">
+      <h2>Aluno Online</h2>
+
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Disciplinas</a></li>
+          <li><a href="#">Calendário</a></li>
+          <li><a href="#">Notas</a></li>
+          <li><a href="#">Perfil</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+
+      <!-- Barra superior -->
+      <header class="topbar">
+        <p>Olá, estudante 👋</p>
+        <img src="avatar.png" alt="Avatar do usuário">
+      </header>
+
+      <!-- Conteúdo do dashboard -->
+      <section class="dashboard">
+
+        <h1>Dashboard</h1>
+
+        <div class="cards">
+
+          <article class="card">
+            <h2>Mural de Avisos</h2>
+            <p>Não haverá aula na sexta-feira.</p>
+          </article>
+
+          <article class="card">
+            <h2>Calendário Acadêmico</h2>
+            <p>Prova de Matemática - 20/05</p>
+          </article>
+
+          <article class="card">
+            <h2>Minhas Disciplinas</h2>
+            <ul>
+              <li>Matemática</li>
+              <li>Programação</li>
+              <li>Banco de Dados</li>
+            </ul>
+          </article>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
 </html>
